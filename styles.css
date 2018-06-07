@@ -1,3 +1,15 @@
+h1, .navbar-brand {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+nav a:visited, nav a:active, nav a {
+  color:white;
+}
+
+nav a:hover {
+  color: #a8a7a7 !important;
+}
+
 .library-background {
   background-image: url("./resources/library.jpg");
   background-size: auto;
@@ -7,4 +19,11 @@
 .button-spacing {
   margin-left: 2.5%;
   margin-right: 2.5%;
+}
+
+.logo {
+  height: 265px;
+
+  display: flex;
+  align-items: center;
 }
