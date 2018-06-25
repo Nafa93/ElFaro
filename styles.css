@@ -1,15 +1,73 @@
-h1, .navbar-brand {
+/*GENERAL*/
+:root {
+  --main-color: #1a316e;
+}
+
+body {
+  padding-top: 112px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*Bootstrap override*/
+.btn-blue {
+  background-color: var(--main-color, #1a316e);
+  border-color: var(--main-color, #1a316e);
+}
+
+.btn-blue:hover {
+  background-color: #1f3a86;
+  border-color: #1f3a86;
+}
+
+.btn-outline-primary {
+  border-color: var(--main-color, #1a316e);
+  color:  var(--main-color, #1a316e);
+  -webkit-transition: background-color 1s ease, border-color 1s ease;
+  transition: background-color 1s ease, border-color 1s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--main-color, #1a316e);
+  border-color: var(--main-color, #1a316e);
+}
+
+/*Navbar*/
+.navbar-brand {
+  margin: 0;
+}
+
+nav h1, .library-background h1{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  color: var(--main-color, #1a316e);
 }
 
 nav a:visited, nav a:active, nav a {
-  color:white;
+  color: var(--main-color, #1a316e) !important;
 }
 
 nav a:hover {
-  color: #a8a7a7 !important;
+  transform: scale(1.1);
+  color: #1a316e !important;
 }
 
+/*Footer*/
+footer {
+  background-color: var(--main-color, #1a316e);
+  font-size:0.8em;
+  color: #dadada;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer a, footer a:hover, footer a:active, footer a:visited {
+  color: #dadada;
+}
+
+/*INDEX*/
+/*Library background*/
 .library-background {
   background-image: url("./resources/elfaro-banner.jpg");
   background-size: 100%;
@@ -17,22 +75,37 @@ nav a:hover {
 }
 
 .library-background p, .library-background h1 {
+  font-size:4em;
   color: white;
   text-shadow: 3px 3px black;
 }
 
 .library-background p {
-  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+  text-shadow: 1.5px 1.5px black;
 }
 
-.button-spacing {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+/*info*/
+.info {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.logo {
-  height: 265px;
+/*CONTACT*/
+/*main*/
+.contact-content {
+  height: 550px;
+}
 
-  display: flex;
-  align-items: center;
+.contact-text {
+  padding: 0 50px;
+}
+
+.contact-text > h1 {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 50px;
+}
+
+.contact-form textarea {
+  height: 300px;
 }

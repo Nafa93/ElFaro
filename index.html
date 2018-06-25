@@ -1,96 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Biblioteca Popular "El Faro"</title>
-  <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">-->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-fixed-top" style="background-color: #1a316e !important;">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">EL FARO</a>
-          <ul class="nav navbar-nav">
-              <li>
-                  <p class="navbar-btn">
-                      <a href="#" class="btn">button1</a>
-                  </p>
-              </li>
-              <li>              
-                  <p class="navbar-btn">
-                      <a href="#" class="btn">button2</a>
-                  </p>
-              </li>
-              <li>
-                  <p class="navbar-btn">
-                      <a href="#" class="btn">button3</a>
-                  </p>
-              </li>
-              <li>              
-                  <p class="navbar-btn">
-                      <a href="#" class="btn">button4</a>
-                  </p>
-              </li>
-              <li>              
-                  <p class="navbar-btn">
-                      <a href="#" class="btn">button5</a>
-                  </p>
-              </li>
-          </ul>
+<!--Navbar-->
+  <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-2 d-flex align-items-center justify-content-center align-self-stretch">  
+        <a class="navbar-brand" href="#">
+          <img src="resources/elfaro-logo.svg" width="100%" class="" alt="">
+        </a>
+      </div>
+      <div class="col-md-9">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-sm-12 col-md-12 header">
+            <h1>EL FARO</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">La Biblioteca <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Actividades</a>
+                <a class="nav-item nav-link" href="#">Contacto</a>
+                <a class="nav-item nav-link" href="#">Hacete Socio</a>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
   </nav>
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron library-background">
-    <div class="container">
-      <div class="col-md-3">
-        <div class="logo">
-          <img class="center-block" src="resources/ElFaro-logo.svg">
-        </div>
-      </div>
-      <div class="col-md-9">
-          <h1>Biblioteca Popular "El Faro"</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+<!--library Background-->
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-center library-background">
+      <div class="col-md-8 col-sm-12 col-12 info">
+          <h1>Biblioteca Popular "EL FARO"</h1>
+          <p>En el mes de Marzo del año 2017, con más de 2000 ejemplares donados por vecinos de nuestra localidad, 
+          abrimos las puertas de la Biblioteca Popular, con todo el orgullo que ambas palabras representan para 
+          nosotros.</p>
+          <p><a class="btn btn-primary btn-lg btn-blue" href="#" role="button">Leer más »</a></p>
       </div>
     </div>
   </div>
-
+<!--Info-->
   <div class="container">
-    <!-- Example row of columns -->
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
-    </div>
-
-    <hr>
-
-    <footer>
-      <p>© 2016 Company, Inc.</p>
+    </div> 
+  </div>
+<!--Footer-->
+  <footer class="container-fluid">
+      <div class="row justify-content-around">
+        <div class="col-md-3">
+          <h6>Facebook</h6>
+          <hr>
+          <p><a href="#">Biblioteca Popular El Faro (Merlo San Luis)</a></p>
+        </div>
+        <div class="col-md-3">
+          <h6>Mail</h6>
+          <hr>
+          <p>bibliotecapopular.elfaro@gmail.com</p>
+        </div>
+        <div class="col-md-3">
+          <h6>Ubicación</h6>
+          <hr>
+          <p>Av. Los Almendros n°4 - Villa De Merlo</p>
+        </div>
+      </div>
     </footer>
-  </div> <!-- /container -->  
 </body>
 
     
