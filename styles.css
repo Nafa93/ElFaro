@@ -1,4 +1,5 @@
 /*GENERAL*/
+/*Tags and General Classes*/
 :root {
   --main-color: #1a316e;
 }
@@ -35,11 +36,15 @@ textarea {
 }
 
 /*Navbar*/
+#header {
+  display: block;
+}
+
 .navbar-brand {
   margin: 0;
 }
 
-nav h1, .library-background h1{
+nav h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
   color: var(--main-color, #1a316e);
 }
@@ -74,7 +79,12 @@ footer a, footer a:hover, footer a:active, footer a:visited {
   background-repeat: no-repeat;
 }
 
-.library-background p, .library-background h1 {
+.library-background h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  color: var(--main-color, #1a316e);
+}
+
+.library-background p, .library-background h2 {
   font-size:4em;
   color: white;
   text-shadow: 3px 3px black;
@@ -91,6 +101,10 @@ footer a, footer a:hover, footer a:active, footer a:visited {
   padding-bottom: 50px;
 }
 
+.info-img {
+  width: 100%;
+}
+
 /*CONTACT*/
 /*main*/
 .contact-content {
@@ -99,11 +113,23 @@ footer a, footer a:hover, footer a:active, footer a:visited {
 
 .contact-text {
   padding: 0 50px;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 .contact-text > h1 {
   border-bottom: 1px solid #dadada;
   padding-bottom: 50px;
+  margin-bottom: 0;
+}
+
+.contact-text > p {
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+.contact-form {
+  background-color: #dadada;
 }
 
 .contact-form textarea {

@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -16,22 +17,22 @@
   <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
     <div class="row align-items-center justify-content-center">
       <div class="col-md-2 d-flex align-items-center justify-content-center align-self-stretch">  
-        <a class="navbar-brand" href="#">
-          <img src="resources/elfaro-logo.svg" width="100%" class="" alt="">
+        <a class="navbar-brand" href="index.html">
+          <img src="resources/elfaro-logo.svg" id="logo" width="100%" class="" alt="">
         </a>
       </div>
       <div class="col-md-9">
         <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-sm-12 col-md-12 header">
-            <h1>EL FARO</h1>
+          <div class="col-12 col-sm-12 col-md-12">
+            <h1 id="header">EL FARO</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">La Biblioteca <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="laBiblioteca.html">La Biblioteca <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#">Actividades</a>
-                <a class="nav-item nav-link" href="#">Contacto</a>
+                <a class="nav-item nav-link" href="contacto.html">Contacto</a>
                 <a class="nav-item nav-link" href="#">Hacete Socio</a>
               </div>
             </div>
@@ -44,7 +45,7 @@
   <div class="container-fluid">
     <div class="row align-items-center justify-content-center library-background">
       <div class="col-md-8 col-sm-12 col-12 info">
-          <h1>Biblioteca Popular "EL FARO"</h1>
+          <h2>Biblioteca Popular "EL FARO"</h2>
           <p>En el mes de Marzo del año 2017, con más de 2000 ejemplares donados por vecinos de nuestra localidad, 
           abrimos las puertas de la Biblioteca Popular, con todo el orgullo que ambas palabras representan para 
           nosotros.</p>
@@ -54,19 +55,22 @@
   </div>
 <!--Info-->
   <div class="container">
-    <div class="row">
+    <div class="row align-items-start">
       <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
+        <img src="resources/Photo1.jpg" class="info-img" alt="">
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
       <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
+        <img src="resources/Photo2.jpg" class="info-img" alt="">
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
       <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
+        <img src="resources/Photo3.jpg" class="info-img" alt="">
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
