@@ -12,6 +12,15 @@ textarea {
   resize: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  color: var(--main-color, #1a316e);
+}
+
+.content {
+  padding: 50px 50px;
+}
+
 /*Bootstrap override*/
 .btn-blue {
   background-color: var(--main-color, #1a316e);
@@ -44,11 +53,6 @@ textarea {
   margin: 0;
 }
 
-nav h1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
-  color: var(--main-color, #1a316e);
-}
-
 nav a:visited, nav a:active, nav a {
   color: var(--main-color, #1a316e) !important;
 }
@@ -62,13 +66,18 @@ nav a:hover {
 footer {
   background-color: var(--main-color, #1a316e);
   font-size:0.8em;
-  color: #dadada;
+  color: #dadada !important;
   padding: 50px 0;
   text-align: center;
 }
 
 footer a, footer a:hover, footer a:active, footer a:visited {
   color: #dadada;
+}
+
+footer h6 {
+  color: #dadada;
+  font-size: 1.3em;
 }
 
 /*INDEX*/
@@ -104,6 +113,9 @@ footer a, footer a:hover, footer a:active, footer a:visited {
 .info-img {
   width: 100%;
 }
+
+/*LIBRARY*/
+/*main*/
 
 /*CONTACT*/
 /*main*/
