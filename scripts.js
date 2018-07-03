@@ -4,12 +4,9 @@ document.addEventListener("scroll", () => {
 
     if(pageYOffset > 66) {
         header.style.display = "none";
-        logo.style.witdh = null;
-        logo.style.height = "40px";
-    }
-    else {
+        logo.style.height = "50px"
+    } else {
         header.style.display = "block";
-        logo.style.height = null;
-        logo.style.width = "100%";
+        logo.style.height = "100px";
     }
 });

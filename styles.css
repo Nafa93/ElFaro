@@ -1,9 +1,5 @@
 /*GENERAL*/
 /*Tags and General Classes*/
-:root {
-  --main-color: #1a316e;
-}
-
 body {
   padding-top: 112px;
 }
@@ -14,7 +10,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
-  color: var(--main-color, #1a316e);
+  color: #1a316e;
 }
 
 .content {
@@ -23,8 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Bootstrap override*/
 .btn-blue {
-  background-color: var(--main-color, #1a316e);
-  border-color: var(--main-color, #1a316e);
+  background-color: #1a316e;
+  border-color: #1a316e;
 }
 
 .btn-blue:hover {
@@ -33,20 +29,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-primary {
-  border-color: var(--main-color, #1a316e);
-  color:  var(--main-color, #1a316e);
+  border-color: #1a316e;
+  color: #1a316e;
   -webkit-transition: background-color 1s ease, border-color 1s ease;
   transition: background-color 1s ease, border-color 1s ease;
 }
 
 .btn-outline-primary:hover {
-  background-color: var(--main-color, #1a316e);
-  border-color: var(--main-color, #1a316e);
+  background-color: #1a316e;
+  border-color:#1a316e;
 }
 
 /*Navbar*/
+#index-link {
+  display: none;
+}
+
 #header {
   display: block;
+}
+
+nav > div {
+  width: 100%;
 }
 
 .navbar-brand {
@@ -54,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav a:visited, nav a:active, nav a {
-  color: var(--main-color, #1a316e) !important;
+  color: #1a316e !important;
 }
 
 nav a:hover {
@@ -62,9 +66,23 @@ nav a:hover {
   color: #1a316e !important;
 }
 
+@media (max-width: 767px) {
+  #logo {
+    display: none;
+  }
+
+  #index-link {
+    display: block;
+  }
+}
+
+#logo {
+  height: 100px;
+}
+
 /*Footer*/
 footer {
-  background-color: var(--main-color, #1a316e);
+  background-color: #1a316e;
   font-size:0.8em;
   color: #dadada !important;
   padding: 50px 0;
@@ -84,13 +102,13 @@ footer h6 {
 /*Library background*/
 .library-background {
   background-image: url("./resources/elfaro-banner.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .library-background h2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
-  color: var(--main-color, #1a316e);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #1a316e;
 }
 
 .library-background p, .library-background h2 {
@@ -110,6 +128,10 @@ footer h6 {
   padding-bottom: 50px;
 }
 
+.info h2 {
+  font-weight: 300;
+}
+
 .info-img {
   width: 100%;
 }
@@ -120,13 +142,14 @@ footer h6 {
 /*CONTACT*/
 /*main*/
 .contact-content {
-  height: 550px;
+  min-height: 100vh;
 }
 
 .contact-text {
   padding: 0 50px;
   font-size: 1.5em;
   font-weight: 400;
+  min-height: 100vh;
 }
 
 .contact-text > h1 {
@@ -142,6 +165,7 @@ footer h6 {
 
 .contact-form {
   background-color: #dadada;
+  min-height: 80vh;
 }
 
 .contact-form textarea {

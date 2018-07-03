@@ -6,33 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Biblioteca Popular "El Faro"</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
+
 </head>
 
 <body>
 <!--Navbar-->
-  <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+  <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-light bg-light">
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-2 d-flex align-items-center justify-content-center align-self-stretch">  
+      <div class="col-md-2 d-flex align-items-center justify-content-center align-self-center">  
         <a class="navbar-brand" href="index.html">
-          <img src="resources/elfaro-logo.svg" id="logo" width="100%" class="" alt="">
+          <img id="logo" src="resources/elfaro-logo.svg" class="" alt="">
         </a>
       </div>
-      <div class="col-md-9">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-sm-12 col-md-12">
+      <div class="col-md-10">
+        <div class="row align-items-center justify-content-starts"></div>
+          <div class="col-sm-5 col-md-12">
             <h1 id="header">EL FARO</h1>
+          </div>
+          <div class="col-sm-5 col-md-12">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="laBiblioteca.html">La Biblioteca <span class="sr-only">(current)</span></a>
+                <a id="index-link" class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="laBiblioteca.html">La Biblioteca</a>
                 <a class="nav-item nav-link" href="#">Actividades</a>
-                <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-item nav-link " href="contacto.html">Contacto</a>
                 <a class="nav-item nav-link" href="#">Hacete Socio</a>
               </div>
             </div>
@@ -64,13 +65,13 @@
       </div>
       <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
-        <img src="resources/Photo2.jpg" class="info-img" alt="">
+        <img src="resources/Photo1.jpg" class="info-img" alt="">
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
       <div class="col-md-4 d-flex flex-column justify-content-center info">
         <h2>Heading</h2>
-        <img src="resources/Photo3.jpg" class="info-img" alt="">
+        <img src="resources/Photo1.jpg" class="info-img" alt="">
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-outline-primary" href="#" role="button">View details »</a></p>
       </div>
@@ -78,24 +79,29 @@
   </div>
 <!--Footer-->
   <footer class="container-fluid">
-      <div class="row justify-content-around">
-        <div class="col-md-3">
-          <h6>Facebook</h6>
-          <hr>
-          <p><a href="#">Biblioteca Popular El Faro (Merlo San Luis)</a></p>
-        </div>
-        <div class="col-md-3">
-          <h6>Mail</h6>
-          <hr>
-          <p>bibliotecapopular.elfaro@gmail.com</p>
-        </div>
-        <div class="col-md-3">
-          <h6>Ubicación</h6>
-          <hr>
-          <p>Av. Los Almendros n°4 - Villa De Merlo</p>
-        </div>
+    <div class="row justify-content-around">
+      <div class="col-md-3">
+        <h6>Facebook</h6>
+        <hr>
+        <p><a href="#">Biblioteca Popular El Faro (Merlo San Luis)</a></p>
       </div>
-    </footer>
+      <div class="col-md-3">
+        <h6>Mail</h6>
+        <hr>
+        <p>bibliotecapopular.elfaro@gmail.com</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Ubicación</h6>
+        <hr>
+        <p>Av. Los Almendros n°4 - Villa De Merlo</p>
+      </div>
+    </div>
+  </footer>
+
+<!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 
     
